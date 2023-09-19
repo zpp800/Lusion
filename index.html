@@ -6,11 +6,19 @@
     <title>HanXi</title>
     <link rel="icon" href="./assets/images/avatar.png">
     <link rel="stylesheet" href="./css/index.css">
-
+    <script>
+        var ua = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
+        document.documentElement.className += /(iPad|iPhone|Android)/i.test(ua) ? ' is-mobile' : ' is-desktop';
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "https://blog.sunguoqi.com";
+        }
+    </script>
     <script defer src="./js/TweenLite.js"></script>
     <script defer src="./js/three.r112.js"></script>
     <script defer src="./js/index.js"></script>
-
+<!--统计-->
+<script async defer data-website-id="7ce2882a-e80f-49e3-af4d-9d3ebff40661" src="https://umami.sunguoqi.com/umami.js"></script>
 </head>
 
 <body>
@@ -52,7 +60,7 @@
                                     style="transform: translate3d(0px, 0px, 0px); opacity: 1; visibility: visible;">
                                     <h1 id="about-hero-title" class="hero-title flex-vertical"
                                         style="visibility: visible;">
-                                        欢迎来到我的主页
+                                        Welcome to my website
                                     </h1>
                                     <h4 id="about-hero-desc" class="hero-desc flex-vertical"
                                         style="visibility: visible;">
@@ -108,8 +116,8 @@
                         <div id="featured-items-container" style="transform: skewY(0deg) translateZ(0px);">
 
                             <div class="featured-item" data-id="img-1" style="display: block;">
-                                <a class="featured-item-link" target="_blank" href="https://blog.hanxi.fun/"
-                                    data-has-parsed="true">
+                                <a class="featured-item-link" target="_blank" 
+                                href="https://blog.hanxi.fun/"data-has-parsed="true">
                                     <div class="featured-item-image"
                                         style="border-radius: 25px; height: 505px; transform: translate(0px, 10vh) scale3d(1, 1.6, 1);background-image:url(./assets/images/myblog.png);background-size: cover;background-position: center; ">
                                         <div class="featured-item-image-inner"></div>
@@ -183,7 +191,8 @@
                             </div>
 
                             <div class="featured-item" data-id="img-3" style="display: block;">
-                                <a class="featured-item-link" target="_blank" href=" https://github.com/zpp800"
+                                <a class="featured-item-link" target="_blank" 
+                                href=" https://github.com/zpp800"
                                     data-has-parsed="true">
                                     <div class="featured-item-image"
                                         style="border-radius: 25px; height: 505px; transform: translate(0px, 10vh) scale3d(1, 1.6, 1);background-image:url(./assets/images/gh.png);background-size: cover;background-position: center;">
